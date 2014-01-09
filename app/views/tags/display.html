@@ -14,6 +14,15 @@
                 #{/if}
             </span>
         #{/if}
+        #{elseif _fPost.tags}
+        	<span class="post-tags">
+        	- Tagged
+        	#{list items: _fPost.tags, as: 'tag'}
+        		<a herf="@{Application.listTagged(tag.name)}">${tag}</a>${tag_isLast ? '': ','}
+        	#{/list}
+        		
+        	</span>
+        #{/elseif}
     </div>
     #{if _as != 'teaser'}
         <div class="post-content">
