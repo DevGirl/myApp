@@ -25,7 +25,8 @@ Post(firstBobPost):
     title:          About the model layer
     postedAt:       2009-06-14
     author:         bob
-    tags:           - play
+    tags:
+                    - play
                     - architecture
                     - mvc
     content:        >
@@ -43,7 +44,8 @@ Post(secondBobPost):
     title:          Just a test of YABE
     postedAt:       2009-03-25
     author:         bob
-    tags:           - play
+    tags:
+                    - play
                     - architecture
                     - mvc
     content:        >
@@ -53,7 +55,8 @@ Post(jeffPost):
     title:          The MVC application
     postedAt:       2009-06-06
     author:         jeff
-    tags:           - play
+    tags:
+                    - play
                     - architecture
                     - mvc
     content:        >
@@ -84,5 +87,6 @@ Comment(c3):
                     This post is useless ?
     postedAt:       2009-04-05
     post:           secondBobPost    
+
 
 
