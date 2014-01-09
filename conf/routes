@@ -4,9 +4,9 @@
 
 # Home page
 GET     /                                       Application.index
-GET     /posts/{<[0-9]+>id}                     Application.show
-GET     /posts/{tag}                            Application.listTagged
-POST    /posts/{postId}/comments                Application.postComment
+GET     /post/{<[0-9]+>id}                     Application.show
+GET     /post/{tag}                            Application.listTagged
+POST    /post/{postId}/comments                Application.postComment
 GET     /captcha                                Application.captcha  
 
 # Ignore favicon requests
@@ -17,3 +17,6 @@ GET     /public/                                staticDir:public
 
 # Catch all
 *       /{controller}/{action}                  {controller}.{action}
+
+#Import crud routes
+*       /admin                                  module:crud
