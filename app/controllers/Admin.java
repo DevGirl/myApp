@@ -24,4 +24,11 @@ public class Admin extends Controller {
         List<Post> posts = Post.find("author.email", user).fetch();
         render(posts);
     }
+
+   public static void form(){
+        render();
+   }
+
+   public static void save(){
+   }
 }

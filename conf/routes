@@ -24,3 +24,5 @@ GET     /admin/?                                Admin.index
 
 #Import Secure routes
 *       /                                       module:secure   
+GET     /admin/new                          Admin.form
+POST    /admin/new                          Admin.save
