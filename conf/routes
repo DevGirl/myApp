@@ -19,10 +19,13 @@ GET     /public/                                staticDir:public
 *       /{controller}/{action}                  {controller}.{action}
 
 #Import crud routes
-GET     /admin/?                                Admin.index
 *       /admin                                  module:crud
+GET     /admin/myPosts/{id}                     Admin.form
+GET     /admin/new                              Admin.form
+POST    /admin/myPosts/{id}                     Admin.save
+POST    /admin/new                              Admin.save
+GET     /admin/?                                Admin.index
 
 #Import Secure routes
-*       /                                       module:secure   
-GET     /admin/new                          Admin.form
-POST    /admin/new                          Admin.save
+*       /                                       module:secure
+   
