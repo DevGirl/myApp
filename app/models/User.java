@@ -20,7 +20,7 @@ public class User extends Model {
 	
 	public String fullName;
 	
-	public String isAdmin;
+	public Boolean isAdmin;
 
 	public User(String email, String password, String fullName) {
 		this.email = email;

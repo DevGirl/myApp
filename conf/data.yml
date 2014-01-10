@@ -1,13 +1,14 @@
 User(bob):
     email:          bob@gmail.com
     password:       secret
-    fullname:       Bob
+    fullName:       Bob
     isAdmin:        true
     
 User(jeff):
     email:          jeff@gmail.com
     password:       secret
-    fullname:       Jeff    
+    fullName:       Jeff
+    isAdmin:        false    
 
 Tag(play):
     name:           Play
